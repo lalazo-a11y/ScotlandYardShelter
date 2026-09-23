@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Luis Armando Lazo">
+  <meta name="description" content="Scotland Yard Shelter - Adopciones y artículos para mascotas">
+  <meta name="keywords" content="adopciones, perros, mascotas, artículos, refugio">
+
+  <title>Scotland Yard Shelter</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Fuentes -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- ================= ENCABEZADO ================= -->
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">🦴</span>
+        Scotland Yard Shelter
+      </a>
+
+      <!-- Navegación escritorio -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#beneficios">Donaciones</a></li>
+          <li><a href="#productos">Artículos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me gustaría conocer más sobre las adopciones.')"
+        >
+          <i data-lucide="message-circle"></i>
+          Adopciones
+        </button>
+      </nav>
+
+      <!-- Botón menú móvil -->
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Menú móvil -->
+    <nav id="mobile-menu" class="mobile-nav">
+
+      <div class="mobile-brand">
+
+        <a class="logo" href="#inicio">
+          <img src="img/adopt.jpg" alt="Logo de Scotland Yard Shelter">
+        </a>
+
+        <span class="brand-name">Scotland Yard Shelter</span>
+
+      </div>
+
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <button
+        type="button"
+        class="btn primary"
+        onclick="openWhatsApp('Hola, me gustaría conocer más sobre las adopciones.')"
+      >
+        <i data-lucide="message-circle"></i>
+        Pedir información
+      </button>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+
+      <div class="container hero-inner">
+
+        <div class="hero-text reveal">
+
+          <p class="eyebrow">
+            Todo para adopciones y artículos
+          </p>
+
+          <h1>
+            Tu mejor amigo merece lo mejor
+          </h1>
+
+          <p class="lead">
+            Encuentra artículos personalizables y conoce más sobre nuestros procesos de adopción.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#productos" class="btn primary">
+              Ver productos
+            </a>
+
+            <button
+              type="button"
+              class="btn outline"
+              onclick="openWhatsApp('Hola, vi su página y me gustaría conocer más sobre sus artículos y adopciones.')"
+            >
+              Contactar por WhatsApp
+            </button>
+
+          </div>
+
+          <p class="trust">
+            <i data-lucide="heart"></i>
+            Más de 200 detalles entregados
+          </p>
+
+        </div>
+
+
+        <div class="hero-image reveal">
+
+          <img
+            src="img/adopt.jpg"
+            alt="Perro en adopción"
+            onerror="imageError(this)"
+          >
+
+          <span class="tag tag-love">
+            Calidad para tu mascota
+          </span>
+
+          <span class="tag tag-custom">
+            Pedidos personalizados
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+    <section id="productos" class="products">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            Artículos de calidad
+          </p>
+
+          <h2>
+            Conoce nuestros artículos
+          </h2>
+
+          <p class="lead">
+            Encuentra diferentes productos para consentir y cuidar a tu mascota.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+          <!-- PRODUCTO 1 -->
+          <article class="product-card reveal">
+
+            <img
+              src="img/cat.jpg"
+              alt="Artículo para mascota"
+              onerror="imageError(this)"
+            >
+
+            <div class="product-body">
+
+              <span class="tag">
+                Favorito
+              </span>
+
+              <h3>
+                Caja Abrazo
+              </h3>
+
+              <p class="price">
+                $349 MXN
+              </p>
+
+              <p class="description">
+                Artículos adecuados para consentir a tu mascota.
+              </p>
+
+              <button
+                type="button"
+                class="btn card"
+                onclick="openModal('modal-caja')"
+              >
+                Ver producto
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCTO 2 -->
+          <article class="product-card reveal">
+
+            <img
+              src="img/Dog.jpg"
+              alt="Producto para perro"
+              onerror="imageError(this)"
+            >
+
+            <div class="product-body">
+
+              <span class="tag">
+                Para mascotas
+              </span>
+
+              <h3>
+                Kit Cuidado
+              </h3>
+
+              <p class="price">
+                $189 MXN
+              </p>
+
+              <p class="description">
+                Productos pensados para el cuidado diario de tu mascota.
+              </p>
+
+              <button
+                type="button"
+                class="btn card"
+                onclick="openModal('modal-vela')"
+              >
+                Ver producto
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCTO 3 -->
+          <article class="product-card reveal">
+
+            <img
+              src="img/adopt.jpg"
+              alt="Artículo personalizado"
+              onerror="imageError(this)"
+            >
+
+            <div class="product-body">
+
+              <span class="tag">
+                Personalizable
+              </span>
+
+              <h3>
+                Taza Personalizada
+              </h3>
+
+              <p class="price">
+                $229 MXN
+              </p>
+
+              <p class="description">
+                Personaliza este artículo con el nombre de tu mascota.
+              </p>
+
+              <button
+                type="button"
+                class="btn card"
+                onclick="openModal('modal-taza')"
+              >
+                Ver producto
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCTO 4 -->
+          <article class="product-card reveal">
+
+            <img
+              src="img/cat dog.jpg"
+              alt="Productos para perros y gatos"
+              onerror="imageError(this)"
+            >
+
+            <div class="product-body">
+
+              <span class="tag">
+                Mascotas
+              </span>
+
+              <h3>
+                Mini Jardín
+              </h3>
+
+              <p class="price">
+                $279 MXN
+              </p>
+
+              <p class="description">
+                Un detalle decorativo para los amantes de las mascotas.
+              </p>
+
+              <button
+                type="button"
+                class="btn card"
+                onclick="openModal('modal-jardin')"
+              >
+                Ver producto
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCTO 5 -->
+          <article class="product-card reveal">
+
+            <img
+              src="img/catwoods.jpg"
+              alt="Kit de celebración"
+              onerror="imageError(this)"
+            >
+
+            <div class="product-body">
+
+              <span class="tag">
+                Para celebrar
+              </span>
+
+              <h3>
+                Kit Cumpleaños
+              </h3>
+
+              <p class="price">
+                $429 MXN
+              </p>
+
+              <p class="description">
+                Todo lo necesario para celebrar un momento especial.
+              </p>
+
+              <button
+                type="button"
+                class="btn card"
+                onclick="openModal('modal-kit')"
+              >
+                Ver producto
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCTO 6 -->
+          <article class="product-card reveal">
+
+            <img
+              src="img/dogwoods.jpg"
+              alt="Tarjeta personalizada"
+              onerror="imageError(this)"
+            >
+
+            <div class="product-body">
+
+              <span class="tag">
+                Pequeño gran detalle
+              </span>
+
+              <h3>
+                Tarjeta con Flores
+              </h3>
+
+              <p class="price">
+                $159 MXN
+              </p>
+
+              <p class="description">
+                Un pequeño detalle para acompañar tu regalo.
+              </p>
+
+              <button
+                type="button"
+                class="btn card"
+                onclick="openModal('modal-tarjeta')"
+              >
+                Ver producto
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section id="beneficios" class="benefits">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <h2>
+            ¿Por qué elegirnos?
+          </h2>
+
+        </div>
+
+
+        <div class="benefits-grid">
+
+
+          <!-- BENEFICIO 1 -->
+          <article class="benefit-card reveal">
+
+            <div class="benefit-icon">
+
+              <i data-lucide="sparkles"></i>
+
+              <img
+                src="img/catminiicono1.jpg"
+                alt="Mascota para productos personalizados"
+                onerror="imageError(this)"
+              >
+
+            </div>
+
+            <h3>
+              Productos personalizados
+            </h3>
+
+            <p>
+              Cada detalle puede llevar tu toque especial.
+            </p>
+
+          </article>
+
+
+          <!-- BENEFICIO 2 -->
+          <article class="benefit-card reveal">
+
+            <div class="benefit-icon">
+
+              <i data-lucide="message-circle-heart"></i>
+
+              <img
+                src="img/dogicono2.jpg"
+                alt="Atención para mascotas"
+                onerror="imageError(this)"
+              >
+
+            </div>
+
+            <h3>
+              Atención rápida
+            </h3>
+
+            <p>
+              Te respondemos con cercanía y claridad.
+            </p>
+
+          </article>
+
+
+          <!-- BENEFICIO 3 -->
+          <article class="benefit-card reveal">
+
+            <div class="benefit-icon">
+
+              <i data-lucide="heart-handshake"></i>
+
+              <img
+                src="img/dogicon3.jpg"
+                alt="Apoyo en adopciones"
+                onerror="imageError(this)"
+              >
+
+            </div>
+
+            <h3>
+              Apoyo en adopciones
+            </h3>
+
+            <p>
+              Te orientamos durante el proceso de adopción.
+            </p>
+
+          </article>
+
+
+          <!-- BENEFICIO 4 -->
+          <article class="benefit-card reveal">
+
+            <div class="benefit-icon">
+
+              <i data-lucide="mouse-pointer-click"></i>
+
+              <img
+                src="img/dogicon4.jpg"
+                alt="Compra fácil para mascotas"
+                onerror="imageError(this)"
+              >
+
+            </div>
+
+            <h3>
+              Compra fácil
+            </h3>
+
+            <p>
+              Elige tu artículo, escríbenos y listo.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= OFERTA ================= -->
+    <section id="oferta" class="offer">
+
+      <div class="container">
+
+        <div class="offer-panel reveal">
+
+          <span class="tag tag-light">
+            Oferta de bienvenida
+          </span>
+
+          <h2>
+            10% de descuento
+          </h2>
+
+          <p>
+            Empieza dándole un detalle especial a tu mascota.
+          </p>
+
+          <button
+            id="offer-button"
+            type="button"
+            class="btn butter"
+            onclick="revealOffer()"
+            aria-expanded="false"
+          >
+            Quiero mi descuento
+          </button>
+
+
+          <div
+            id="offer-reveal"
+            class="offer-reveal hidden"
+            aria-live="polite"
+          >
+
+            <p class="offer-reveal-title">
+              ¡Listo! Tu código de bienvenida es:
+            </p>
+
+            <div class="offer-code-row">
+
+              <span class="offer-code">
+                DULCE10
+              </span>
+
+              <button
+                id="copy-code"
+                type="button"
+                class="btn outline"
+                onclick="copyDiscount()"
+              >
+                Copiar código
+              </button>
+
+              <button
+                type="button"
+                class="btn whatsapp"
+                onclick="openWhatsApp('Hola, quiero usar mi código DULCE10 en mi primer pedido.')"
+              >
+                Pedir por WhatsApp
+              </button>
+
+            </div>
+
+            <p
+              id="copy-feedback"
+              class="copy-feedback hidden"
+              role="status"
+            >
+              Código copiado
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TESTIMONIOS ================= -->
+    <section id="testimonios" class="testimonials">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            Reseñas de clientes
+          </p>
+
+          <h2>
+            Lo que dicen nuestros clientes
+          </h2>
+
+        </div>
+
+
+        <div class="testimonial-viewport">
+
+          <div id="testimonial-track" class="testimonial-track">
+
+
+            <!-- RESEÑA 1 -->
+            <article class="testimonial-slide">
+
+              <div class="testimonial-card">
+
+                <div class="testimonial-header">
+
+                  <img
+                    class="avatar"
+                    src="https://images.pexels.com/photos/8727453/pexels-photo-8727453.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Retrato de cliente"
+                    onerror="avatarError(this)"
+                  >
+
+                  <div>
+
+                    <p class="name">
+                      Miranda C.
+                    </p>
+
+                    <p class="occasion">
+                      Proceso de adopción
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <p class="quote">
+                  "Tenía dudas sobre el proceso y cómo son tratados los perritos al ser rescatados. Todo fue muy gentil y me apoyaron al 100% con el proceso."
+                </p>
+
+                <div
+                  class="stars"
+                  aria-label="Cinco estrellas"
+                >
+                  ★★★★★
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- RESEÑA 2 -->
+            <article class="testimonial-slide">
+
+              <div class="testimonial-card">
+
+                <div class="testimonial-header">
+
+                  <img
+                    class="avatar"
+                    src="https://images.pexels.com/photos/12446392/pexels-photo-12446392.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Retrato de cliente"
+                    onerror="avatarError(this)"
+                  >
+
+                  <div>
+
+                    <p class="name">
+                      Oscar T.
+                    </p>
+
+                    <p class="occasion">
+                      Adopción
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <p class="quote">
+                  "Excelente servicio y apoyo durante el proceso de adopción."
+                </p>
+
+                <div
+                  class="stars"
+                  aria-label="Cinco estrellas"
+                >
+                  ★★★★★
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- RESEÑA 3 -->
+            <article class="testimonial-slide">
+
+              <div class="testimonial-card">
+
+                <div class="testimonial-header">
+
+                  <img
+                    class="avatar"
+                    src="https://images.pexels.com/photos/962337/pexels-photo-962337.png?auto=compress&cs=tinysrgb&w=400"
+                    alt="Retrato de cliente"
+                    onerror="avatarError(this)"
+                  >
+
+                  <div>
+
+                    <p class="name">
+                      Andrea C.
+                    </p>
+
+                    <p class="occasion">
+                      Correa y croquetas para perro
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <p class="quote">
+                  "Buen apoyo en la personalización de los productos y atención durante mi compra."
+                </p>
+
+                <div
+                  class="stars"
+                  aria-label="Cinco estrellas"
+                >
+                  ★★★★★
+                </div>
+
+              </div>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="carousel-controls">
+
+          <button
+            id="testimonial-prev"
+            type="button"
+            aria-label="Testimonio anterior"
+          >
+            <i data-lucide="arrow-left"></i>
+          </button>
+
+
+          <div
+            id="testimonial-dots"
+            class="dots"
+            aria-label="Seleccionar testimonio"
+          >
+
+            <button
+              class="active"
+              type="button"
+              aria-label="Ver testimonio 1"
+              aria-current="true"
+            ></button>
+
+            <button
+              type="button"
+              aria-label="Ver testimonio 2"
+              aria-current="false"
+            ></button>
+
+            <button
+              type="button"
+              aria-label="Ver testimonio 3"
+              aria-current="false"
+            ></button>
+
+          </div>
+
+
+          <button
+            id="testimonial-next"
+            type="button"
+            aria-label="Siguiente testimonio"
+          >
+            <i data-lucide="arrow-right"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="contact">
+
+      <div class="container contact-panel reveal">
+
+        <div class="contact-text">
+
+          <p class="eyebrow">
+            Estamos cerca
+          </p>
+
+          <h2>
+            Hablemos sobre tu próxima adopcion
+          </h2>
+
+          <p class="lead">
+            Cuéntanos sobre tus planes de una proxima adopcion o detalles para tu fiel compañero .
+          </p>
+
+          <button
+            type="button"
+            class="btn primary"
+            onclick="openWhatsApp('Hola, quiero conocer más sobre sus artículos y adopciones.')"
+          >
+            Escribir por WhatsApp
+          </button>
+
+        </div>
+
+
+        <aside
+          class="contact-info"
+          aria-label="Datos de contacto"
+        >
+
+          <ul>
+
+            <li>
+              <i data-lucide="instagram"></i>
+
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @scotlandyard
+              </a>
+            </li>
+
+            <li>
+              <i data-lucide="facebook"></i>
+
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Scotland Yatrd
+              </a>
+            </li>
+
+            <li>
+              <i data-lucide="mail"></i>
+
+              <a href="mailto:scotlandyard@shelter.com.mx">
+              scotlandyard@shelter.com.mx
+              </a>
+            </li>
+
+            <li>
+              <i data-lucide="clock-3"></i>
+              Lunes a sábado, 10:00 a 19:00
+            </li>
+
+          </ul>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= BOTÓN WHATSAPP ================= -->
+  <button
+    id="whatsapp-float"
+    class="whatsapp-float"
+    type="button"
+    aria-label="Contactar por WhatsApp"
+    onclick="openWhatsApp('Hola, quiero conocer más sobre Scotland Yard Shelter.')"
+  >
+    <i data-lucide="message-circle"></i>
+  </button>
+
+
+  <!-- ================= MODALES ================= -->
+
+  <!-- MODAL CAJA -->
+  <div
+    id="modal-caja"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-caja-title"
+  >
+
+    <div class="modal-panel">
+
+      <div class="modal-image">
+
+        <img
+          src="img/cat.jpg"
+          alt="Caja Abrazo"
+          onerror="imageError(this)"
+        >
+
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeModal('modal-caja')"
+          aria-label="Cerrar"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <h2 id="modal-caja-title">
+          Caja Abrazo
+        </h2>
+
+        <p class="price">
+          $349 MXN
+        </p>
+
+        <p>
+          Un detalle especial para demostrar el cariño que tienes por tu mascota.
+        </p>
+
+        <h3>
+          Incluye
+        </h3>
+
+        <ul>
+          <li>Presentación especial</li>
+          <li>Detalle personalizado</li>
+          <li>Empaque para regalo</li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me interesa la Caja Abrazo de $349 MXN.')"
+        >
+          Solicitar por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL CUIDADO -->
+  <div
+    id="modal-vela"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-vela-title"
+  >
+
+    <div class="modal-panel">
+
+      <div class="modal-image">
+
+        <img
+          src="img/Dog.jpg"
+          alt="Kit de cuidado"
+          onerror="imageError(this)"
+        >
+
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeModal('modal-vela')"
+          aria-label="Cerrar"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <h2 id="modal-vela-title">
+          Kit Cuidado
+        </h2>
+
+        <p class="price">
+          $189 MXN
+        </p>
+
+        <p>
+          Una opción práctica para complementar el cuidado diario de tu mascota.
+        </p>
+
+        <h3>
+          Características
+        </h3>
+
+        <ul>
+          <li>Práctico para uso diario</li>
+          <li>Presentación sencilla</li>
+          <li>Ideal como regalo</li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me interesa el Kit Cuidado de $189 MXN.')"
+        >
+          Solicitar por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL TAZA -->
+  <div
+    id="modal-taza"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-taza-title"
+  >
+
+    <div class="modal-panel">
+
+      <div class="modal-image">
+
+        <img
+          src="img/adopt.jpg"
+          alt="Taza personalizada"
+          onerror="imageError(this)"
+        >
+
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeModal('modal-taza')"
+          aria-label="Cerrar"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <h2 id="modal-taza-title">
+          Taza Personalizada
+        </h2>
+
+        <p class="price">
+          $229 MXN
+        </p>
+
+        <p>
+          Personaliza tu taza con el nombre o una imagen relacionada con tu mascota.
+        </p>
+
+        <h3>
+          Personalización
+        </h3>
+
+        <ul>
+          <li>Nombre de tu mascota</li>
+          <li>Diseño personalizado</li>
+          <li>Ideal para regalo</li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me interesa la Taza Personalizada de $229 MXN.')"
+        >
+          Solicitar por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL JARDÍN -->
+  <div
+    id="modal-jardin"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-jardin-title"
+  >
+
+    <div class="modal-panel">
+
+      <div class="modal-image">
+
+        <img
+          src="img/cat dog.jpg"
+          alt="Mini Jardín"
+          onerror="imageError(this)"
+        >
+
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeModal('modal-jardin')"
+          aria-label="Cerrar"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <h2 id="modal-jardin-title">
+          Mini Jardín
+        </h2>
+
+        <p class="price">
+          $279 MXN
+        </p>
+
+        <p>
+          Un detalle decorativo para quienes disfrutan de las plantas y las mascotas.
+        </p>
+
+        <h3>
+          Incluye
+        </h3>
+
+        <ul>
+          <li>Presentación decorativa</li>
+          <li>Diseño especial</li>
+          <li>Ideal para regalar</li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me interesa el Mini Jardín de $279 MXN.')"
+        >
+          Solicitar por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL KIT -->
+  <div
+    id="modal-kit"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-kit-title"
+  >
+
+    <div class="modal-panel">
+
+      <div class="modal-image">
+
+        <img
+          src="img/catwoods.jpg"
+          alt="Kit cumpleaños para mascota"
+          onerror="imageError(this)"
+        >
+
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeModal('modal-kit')"
+          aria-label="Cerrar"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <h2 id="modal-kit-title">
+          Kit Cumpleaños
+        </h2>
+
+        <p class="price">
+          $429 MXN
+        </p>
+
+        <p>
+          Una opción para celebrar el cumpleaños de tu mascota y crear un momento especial con tu mascota detalles y premios .
+        </p>
+
+        <h3>
+          Incluye
+        </h3>
+
+        <ul>
+          <li>Decoración</li>
+          <li>Presentación especial</li>
+          <li>Elementos personalizados</li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me interesa el Kit Cumpleaños de $429 MXN.')"
+        >
+          Solicitar por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL TARJETA -->
+  <div
+    id="modal-tarjeta"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-tarjeta-title"
+  >
+
+    <div class="modal-panel">
+
+      <div class="modal-image">
+
+        <img
+          src="img/dogwoods.jpg"
+          alt="Tarjeta con flores"
+          onerror="imageError(this)"
+        >
+
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeModal('modal-tarjeta')"
+          aria-label="Cerrar"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <h2 id="modal-tarjeta-title">
+          Guarderia 
+        </h2>
+
+        <p class="price">
+          $159 MXN
+        </p>
+
+        <p>
+         Estancia para tu mscota disponible de Lunes a sábado, 10:00 a 19:00 hrs .
+        </p>
+
+        <h3>
+          Características
+        </h3>
+
+        <ul>
+          <li>Diseño decorativo</li>
+          <li>Mensaje personalizado</li>
+          <li>Ideal para regalar</li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn primary"
+          onclick="openWhatsApp('Hola, me interesa la Tarjeta con Flores de $159 MXN.')"
+        >
+          Solicitar por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
